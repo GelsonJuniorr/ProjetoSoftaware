@@ -110,4 +110,10 @@ function exibirErro(mensagem) {
   document.getElementById("alert-error-text").textContent = mensagem;
   alerta.classList.remove("hidden");
   alerta.focus();
+
+}
+
+// Exportação para testes automatizados (Jest / Node.js)
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { catalogo, formatarMoeda, formatarNumeroPedido };
 }
